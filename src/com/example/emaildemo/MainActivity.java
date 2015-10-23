@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         
         sendBtn.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
-				String[] recipientAddr={recipient.getText().toString()};
+				String[] recipientAddr={recipient.getText().toString()};//address has to be in string[] in order to be received
 				
 				Intent intent=new Intent(Intent.ACTION_SEND);
 				intent.setData(Uri.parse("mailto:"));
